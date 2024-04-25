@@ -55,9 +55,22 @@ header li a {
     text-decoration: none;
 }
 
+header li a:hover {
+    opacity: 0.8;
+}
+
 .info {
     width: 100%;
     display: inline-block;
+}
+.info h2 {
+    display: inline-block;
+    margin-left: none;
+    margin-right: none;
+}
+
+.info h2:hover {
+    opacity: 0.8;
 }
 
 .info section {
@@ -85,15 +98,22 @@ header li a {
     overflow: auto;
 }
 
-#main {
+.links a {
+    display: inline-block;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.links img {
     border-style: double;
     border-color: rgb(216, 34, 216);
     border-width: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 500px;
     height: 300px;
+}
+
+.links img:hover {
+    opacity: .8;
 }
 
 .links ul li {
@@ -102,11 +122,13 @@ header li a {
 }
 
 .links ul li img {
-    border-style: double;
-    border-color: rgb(216, 34, 216);
-    border-width: 10px;
     width: 300px;
     height: 200px;
-    margin-right: 50px;
+    margin-left: 50px;
     margin-top: 50px;
+}
+
+@media screen and (min-width: 480px) {
+    #header {width: 200px; float: left;}
+    #section {margin-left: 216px;}
 }
