@@ -95,37 +95,68 @@ header li a:hover {
     margin-top: 30px;
     margin-left: 20px;
     margin-right: 20px;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .links a {
+    border-style: double;
+    border-color: rgb(216, 34, 216);
+    border-width: 10px;
     display: inline-block;
     margin-left: 300px;
     margin-right: 300px;
 }
 
+.Label div {
+    max-width: 100%;
+    position: relative;
+    background-color: rgb(108, 108, 219);
+    color:rgb(216, 17, 199);
+    text-align: center;
+    font-family: 'Arial sans-serif', 'Verdana sans-serif', Tahoma, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.subLabel div {
+    max-width: 100%;
+    position: relative;
+    background-color: rgb(108, 108, 219);
+    color:rgb(216, 17, 199);
+    text-align: center;
+    font-family: 'Arial sans-serif', 'Verdana sans-serif', Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .links img {
-    border-style: double;
-    border-color: rgb(216, 34, 216);
-    border-width: 10px;
     width: 500px;
     height: 300px;
 }
 
-.links img:hover {
+.links a:hover {
+    opacity: .8;
+}
+
+.links ul li:hover {
     opacity: .8;
 }
 
 .links ul li {
+    width: 320px;
+    height: 247px;
+    margin-top: 30px;
+    margin-left: 25px;
     list-style-type: none;
     float: left;
+    border-style: double;
+    border-color: rgb(216, 34, 216);
+    border-width: 10px;
 }
 
 .links ul li img {
     width: 300px;
     height: 200px;
-    margin-left: 50px;
-    margin-top: 50px;
 }
 
 @media screen and (min-width: 480px) {
