@@ -1,15 +1,17 @@
+/* Default style. */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+/* General body style. */
 body {
     background-color: rgb(216, 241, 233);
     background-image: url("../images/paint.jpg");
     background-image: cover;
     background-position: center;
 }
-
+/* This is the styling of the header and the elements that correspond to each subheader. */
 header {
     height: 300px;
     border-width: 10px;
@@ -59,7 +61,7 @@ header li a {
 header li a:hover {
     opacity: 0.8;
 }
-
+/* Here I edit the style of some headers for the info sections */
 .info {
     width: 100%;
     display: inline-block;
@@ -74,7 +76,7 @@ header li a:hover {
 .info h2:hover {
     opacity: 0.8;
 }
-
+/* This is the general styling of every section that contains information. */
 .info section {
     background-image: url("../images/section.jpg");
     background-position: center;
@@ -84,6 +86,7 @@ header li a:hover {
     margin-bottom: 20px;
     padding: 50px;
     height: auto;
+    font-size: 20px;
     font-family: 'Arial sans-serif', 'Verdana sans-serif', Tahoma, sans-serif;
     background-color: rgb(238, 196, 180);
     color: rgb(22, 22, 155);
@@ -92,14 +95,14 @@ header li a:hover {
 .info p {
     margin-top: 30px;
 }
-
+/* This is the general style of every image in the section and their corresponding boxes */
 .links {
     margin-top: 30px;
     margin-left: 20px;
     margin-right: 20px;
     overflow: hidden;
 }
-
+/* Here I edit the style of the main image that is linked to a real project. */
 .links a {
     border-style: double;
     border-color: rgb(216, 34, 216);
@@ -119,8 +122,9 @@ header li a:hover {
     font-family: 'Arial sans-serif', 'Verdana sans-serif', Tahoma, sans-serif;
     font-size: 25px;
     font-weight: bold;
+    
 }
-
+/* Here I edit the style of the multiple placeholder images */
 .subLabel div {
     max-width: 100%;
     position: relative;
@@ -161,7 +165,29 @@ header li a:hover {
     width: 300px;
     height: 200px;
 }
+/* Here I edit the style of the Back to top link. */
+.return{
+    border-style: double;
+    border-width: 10px;
+    border-color: rgb(216, 34, 216);
+    background-image: url("../images/section.jpg");
+    background-position: center;
+    color: rgb(216, 17, 199);
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Arial sans-serif', 'Verdana sans-serif', Tahoma, sans-serif;
+    width: 290px;
+    height: 70px;
+    margin-left: 520px;
+}
 
+.return a {
+    text-decoration: none;
+    color: inherit;
+}
+/* These are the media queries inplemented for responsive design, and they use flexbox functionality. */
 @media only screen and (max-width: 600px) {
     .relocate {
         display: flex;
@@ -181,25 +207,122 @@ header li a:hover {
         
     }
     .links a {
+        display: flex;
+        flex-direction: column;
         margin-left: 0px;
         width: 300px;
-        height: 200px;
+        height: 190px;
     }
     .links a img {
         margin-left: 0px;
         width: 280px;
-        height: 153px;
+        height: 163px;
     }
     .Label div {
         font-size: 20px;
     }
     .links ul li {
-        height: 200px;
+        display: flex;
+        flex-direction: column;
+        height: 190px;
         width: 250px;
         margin-left: 25px;
     }
     .links ul li img {
         height: 153px;
         width: 230px;
+    }
+    .return{
+        margin-left: 150px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .relocate {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .enlarge {
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .links {
+        display:flex;
+        flex-direction: column;  
+    }
+    .links a {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        width: 370px;
+        height: 230px;
+    }
+    .links a img {
+        margin-left: 0px;
+        width: 350px;
+        height: 193px;
+    }
+    .links ul li {
+        display: flex;
+        flex-direction: column;
+        height: 237px;
+    }
+    .Label div {
+        font-size: 20px;
+    }
+    .return{
+        margin-left: 200px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 900px){
+    .links {
+        display:flex;
+        flex-direction: column;  
+    }
+    .links a {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        width: 370px;
+        height: 240px;
+    }
+    .links a img {
+        margin-left: 0px;
+        width: 350px;
+        height: 203px;
+    }
+    .links ul li {
+        display: flex;
+        flex-direction: column;
+        height: 237px;
+    }
+    .Label div {
+        font-size: 20px;
+    }
+    .return{
+        margin-left: 300px;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    .links {
+        display:flex;
+        flex-direction: column;  
+    }
+    .links a {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 520px;
+    }   
+    .links ul li {
+        display: flex;
+        flex-direction: column;
+        height: 237px;
     }
 }

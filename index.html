@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
+<!-- The links in the header allow for styling and default styling override. -->
 <head>
     <meta charset="UTF-8" />
+    <link rel="reset style" href="./Assets/css/reset.css">
     <link rel="stylesheet" href="./Assets/css/style.css">
     <title>Portfolio Webpage</title>
 </head>
 
 <body>
-    <header class="enlarge">
+    <!-- The header contains links to different sections according to content, my name, and a title. -->
+    <header class="enlarge" id="welcome">
         <h1>Portfolio Website</h1>
-        <h2>Ernesto Gonzalez</h2>
+        <h2 id="name">Ernesto Gonzalez</h2>
         <ul class="relocate">
             <li><a href="#about">About Me</a></li>
             <li><a href="#work">Work</a></li>
@@ -18,15 +20,18 @@
             <li><a href="#resume">Resume</a></li>
         </ul>
     </header>
+    <!-- What comes after the header is a series of sections that contain content relevant to their title. -->
     <section class="info">
+        <!-- The about section is a brief description of things that I did relevant to the job. -->
         <section id="about">
             <h2>About Me</h2>
-            <p>I am a graduate student searching for jobs as a full-stack developer. I have done and deployed several projects in preparation for future web development jobs.</p>
-            <p>I attended the University of Florida and learned some programming skills during my education there. Then, I took a boot camp program at UCF where I learned website development.</p>
+            <p>I am a graduate student searching for jobs as a full-stack developer.</p>
+            <p>I took a boot camp program at UCF where I learned website development alongside other specific full-stack skills.</p>
         </section>
+        <!-- The work section is a collage of links that represent projects I worked on. The big picture is an actual link, while the smaller ones are placeholders. -->
         <section id="work">
             <h2>Work</h2>
-            <p>I have experience working with several programming languages such as Java, C++, and Python. Some examples of my projects can be found on this section.</p>
+            <p>Examples of my projects can be found on this section. So far, I have finished a refactor and plan to make some media sites.</p>
             <section class="links">
                 <a class="Label" title="Horiseon Website Refactor" rel="Horiseon Website Refactor" href="https://ernestoag.github.io/Horiseon-Website-Refactor/"><img src="Assets/images/Horiseon.jpg" alt="Picture of Horiseon Website"><div>Horiseon Website Refactor</div></img></a>
                 <ul class="subLabel">
@@ -36,15 +41,22 @@
                 </ul>
             </section>
         </section>
+        <!-- The contact section displays personal contact information, of course, these are just placeholders. -->
         <section id="contact">
             <h2>Contact Me</h2>
             <p>My phone number is: ***-***-****</p>
             <p>My address is: 00000 Street, City, State, Zip Code</p>
             <p>My email is: ernestoale37@gmail.com</p>
         </section>
+        <!-- The resume section contains my resume, I don't have a resume; therefore, there is nothing there. -->
         <section id="resume">
             <h2>Resume</h2>
             <p>Nothing to see here yet</p>
         </section>
+    </section>
+    <!-- This section is a link that sends the user back to the top. -->
+    <section class="return">
+        <a href="#welcome">Go back to top</a>
+        <br></br>
     </section>
 </body>
