@@ -5,12 +5,14 @@
 The goal of this web page is to give employers a preview of projects that I have done and my background information. I used a reset css file from class and some external images. Here are some important points to notice: 
 
 * The website has a header with title and links to content.
-* The website implements images that do not belong to me and where retrieved from the internet; they are open access and are compiled in websites.
+* The website implements images that do not belong to me and were retrieved from the internet; they are open access and are compiled in websites.
 * Links in the sections allow users to navigate the page and see a different website.
 * I used some placeholders since I don't have too much experience yet.
 * I implemented media queries to comply with responsive design; however, this site was designed on a 1366x768 monitor, and higher resolutions might cause problems.
-* Reffer to the code notes to see each section's functionality and how style was applied.
-
+* Refer to the code notes to see each section's functionality and how style was applied.
+  
+ Here is the link to the web page:  https://ernestoag.github.io/Portfolio-Website/
+ 
 ## Installation
 
 N/A
